@@ -1,0 +1,105 @@
+#Задание 1
+
+names = ["Richard", "Igor", "Jonathan", "Alice", "Mary", "Bonnie"]
+for i in names:
+    print(f"Hello {i}!")
+
+#Задание2
+
+phrase = "I'm learning cycles."
+for i in range(10):
+    print(phrase)
+
+#Задание3
+
+stations = ["Малиновка", "Рябиновка", "Суслово", "Дрожжино", "Звягино"]
+for i in stations:
+    if i == "Звягино":
+        print(f"Поезд на станции: {i} Конечная!")
+    else:
+        print(f"Поезд на станции: {i}")
+
+#Задание4
+
+shop = ["Laptop", "Smartphone", "Watch", "Tablet", "Headphones"]
+for i in shop:
+    if i == "Laptop":
+        print("I'm buying this.")
+    else:
+        print("I don't need it.")
+
+#Задание5
+
+tasks = ["Сдать проект (Важная)", "Сходить в магазин", "Позвонить врачу (Важная)", "Убраться в комнате", "Подготовить отчёт"]
+for index, tasks in enumerate(tasks, start=1):
+    if "Важная" in tasks:
+        print(f"{index}!: {tasks}")
+    else:
+        print(f"{index}: {tasks}")
+
+#Задание6
+
+nom = int(input("Введите кол-во чисел: "))
+i = 0
+for x in range(nom):
+        num = int(input("Введите сами числа: "))
+        i += num
+print("Сумма чисел: ", i)
+
+
+#Задание7
+
+count = -1
+while count < 9:
+    count += 1
+    print(f" цикл сработал {count} раз")
+
+#Задание8
+
+i = 0
+while i < 3:
+    num = input("> ")
+    if num == "w":
+        print("Персонаж идёт вперёд")
+    elif num == "a":
+        print("Персонаж идёт вперёд")
+    elif num == "s":
+        print("Персонаж идёт назад.")
+    elif num == "d":
+        print("Персонаж идёт вправо.")
+    elif num == "stop":
+        print("Программа завершена.")
+        break
+    else:
+        print("Неизвестная команда! Попробуйте снова.")
+
+#Задание9
+
+while True:
+    count = int(input("Введите число от 1 до 9: "))
+    if count >= 1 and count <= 9:
+        i = 0
+        num = 0
+        while i < 10:
+            i += 1
+            num = count
+            num *= i
+            print(f"{count} x {i} = {num}")
+        break
+    else:
+        print("Число вне диапазона. Попробуйте снова.")
+
+#Задание10
+
+i = 0
+prot = "граммафон"
+while i < 3:
+    i += 1
+    print("Загадка: Музыкант, певец, рассказчик - А всего труба да ящик")
+    ot = input("ответ: ")
+    if ot == prot:
+        print("Загадка разгадана. Поздравляю!")
+        break
+    else:
+        print("Неправильно!")
+        print(f"Поппыток осталось {3 - i
