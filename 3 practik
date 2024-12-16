@@ -1,0 +1,75 @@
+#Задание 1
+minyt = int(input("Введите минуты: "))
+print(minyt//60, minyt%60)
+
+#Задание 2
+
+a = 8
+b = 9
+h = int(input("Сколько поспала Аня: "))
+if a == h or b == h:
+    print("Это нормально")
+elif b < h:
+    print("Пересып")
+else:
+    print("Недосып")
+
+#Задание 3
+
+import math
+a = int(input("Введите сторону a: "))
+b = int(input("Введите сторону b: "))
+c = int(input("Введите сторону c: "))
+p = (a + b + c)/2
+s = math.sqrt(p * (p - a) * (p - b) * (p - c))
+print("Площадь треугольника равна: ", s)
+
+#Задание 4
+
+print("Выберите тип комнаты: \n[1] - Треугольная\n[2] - Прямоугольная \n[3] - Круглая ")
+num = input("Введите номер вышего выбора: ")
+if num == "1":
+    a = int(input("Введите длину стены a: "))
+    b = int(input("Введите длину стены b: "))
+    c = int(input("Введите длину стены c: "))
+    p = (a + b + c) / 2
+    s = math.sqrt(p * (p - a) * (p - b) * (p - c))
+    print("Площадь комнаты будет равна: ", s)
+elif num == "2":
+    a = int(input("Введите длину стены a: "))
+    b = int(input("Введите длину стены b: "))
+    s = a * b
+    print("Площадь комнаты будет равна: ", s)
+elif num == "3":
+     d = int(input("Введите шиирину комнаты: "))
+     r = d/2
+     pi = 3.14
+     s = pi * (r**2)
+     print("Площадь комнаты будет равна: ", s)
+else:
+    print("Неверная операция.")
+
+ #Задание 5
+
+n = int(input("Введите колличество програмистов: "))
+prom = "программист"
+if n == 1:
+    print(n, prom)
+elif n > 1 and n < 5:
+    ista = "истa"
+    print(n, prom + ista)
+elif n >= 5:
+    istov = "истов"
+    print(n,prom + istov)
+else:
+    print("Неверное число программистов")
+
+#Задание 6
+
+bilet = input("Введите номер билета: ")
+per = int(bilet[0]) + int(bilet[1]) + int(bilet[2])
+pos = int(bilet[-1]) + int(bilet[-2]) + int(bilet[-3])
+if per == pos:
+    print("Билет счастливый")
+else:
+    print("Билет обычный")
