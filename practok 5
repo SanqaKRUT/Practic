@@ -1,0 +1,133 @@
+#Задание 1
+
+age = int(input("Введите ваш возраст "))
+
+if age < 18:
+    print("Вы несовершеннолетний")
+elif age <  65 and age > 18:
+    print("Вы трудоспособный человек")
+elif age > 65:
+    print("Вы пенсионер")
+
+#Задание 2
+
+sum = int(input("Стоимость покупки: "))
+
+if sum < 1000:
+    print("Cкидка не предоставляется")
+elif sum < 5000 and sum > 1000:
+    print("Cкидка 5%")
+elif sum > 5000:
+    print("Cкидка 10%")
+
+#Задание 3
+
+num1 = int(input("Введите число а: "))
+num2 = int(input("Введите число b: "))
+print("Выберите операцию: \n[1] -\n[2] +\n[3] *\n[4] /")
+num = input("Введите номер вышего выбора: ")
+if num == "1":
+    print(num1 - num2)
+elif num == "2":
+    print(num1 + num2)
+elif num == "3":
+    print(num1 * num2)
+elif num == "4":
+    print(num1 / num2)
+else:
+    print("Неверная операция.")
+
+#Задание 4
+
+num = int(input("Введите число: "))
+if num %2 == 0 and num % 10 == 6:
+    print(True)
+elif num %2 == 0 and num % 10 == 2:
+    print(True)
+else:
+    print(False)
+
+#Задание 5
+
+par = ("Пароль")
+pas = input("Введите пароль: ")
+if pas == par:
+    print("Доступ разрешен.")
+else:
+    print("Неверный пароль.")
+
+#Задание 6
+
+blue = ("B1", "B3", "B7", "C1", "C4", "C5", "C6", "C8", "C9")
+green = ("B2", "B4", "B6", "B8", "C2", "C7", "C10", "C11")
+pop = input("Введите координаты квадрата: ")
+if pop in blue:
+    print("В данном квадрате обитает синий попугай.")
+elif pop in green:
+    print("В данном квадрате обитает зеленый попугай.")
+else:
+    print("В данном квадрате попугаи не обитают.")
+
+#Задание 7
+
+
+num1 = int(input("Введите число n: "))
+num2 = int(input("Введите число k: "))
+if num1 % num2 == 0:
+    print(True)
+else:
+    print(False)
+
+#Задание 8
+name = "Герберт"
+health = 77
+level = 5
+if level >= 5:
+    if health > 50 and health < 100:
+        print("Вы готовы к миссии!")
+    elif health < 50 and health > 20:
+        print("Ваше здоровье низкое, будьте осторожны.")
+    elif health < 20:
+        print("Ваше здоровье низкое, будьте осторожны.")
+    else:
+        print("Некорректные данные.")
+elif level < 5 and level > 0:
+    print ("Ваш уровень слишком низкий для выполнения миссии.")
+else:
+    print("Некорректные данные.")
+
+#Задание 9
+
+inventory = ["яблоко", "шариковая ручка"]
+if "фонарь" in inventory and "ключ" in inventory:
+    print("Вы можете пройти через дверь.")
+elif "фонарь" not in inventory and "ключ" in inventory:
+    print("У вас нет фонаря, слишком темно, чтобы пройти.")
+elif "ключ" not in inventory and "фонарь" in inventory:
+    print("У вас нет ключа, вы не можете открыть дверь.")
+else:
+    print("У вас нет ни ключа, ни фонаря, вы не можете пройти через дверь.")
+
+#Задание10
+
+king = "Enemies are coming! Are the archers ready?"
+warrior = "For the Alliance!"
+magician = "The spell is ready."
+
+print(king)
+if "?" in king or "!" in king or "." in king:
+    print(True)
+else:
+    print(False)
+
+print(warrior)
+if "?" in warrior or "!" in warrior or "." in warrior:
+    print(True)
+else:
+    print(False)
+
+print(magician)
+if "?" in magician or "!" in magician or "." in magician:
+    print(True)
+else:
+    print(False)
